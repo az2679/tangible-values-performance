@@ -2,10 +2,10 @@ import { RigidBody } from '@react-three/rapier';
 import { useGLTF, useTexture } from '@react-three/drei';
 
 export default function Archways({dictatorPos, volunteerPos, exchangePos, trustPos}){
-  const { nodes: dictator } = useGLTF('/tangible-values//models/rounded_arch.glb')
-  const { nodes: exchange } = useGLTF('/tangible-values//models/stone_arch.glb')
-  const { nodes: trust } = useGLTF('/tangible-values//models/circle_arch.glb')
-  const { nodes: volunteer } = useGLTF('/tangible-values//models/pointed_arch.glb')
+  const { nodes: dictator } = useGLTF('/tangible-values-performance//models/rounded_arch.glb')
+  const { nodes: exchange } = useGLTF('/tangible-values-performance//models/stone_arch.glb')
+  const { nodes: trust } = useGLTF('/tangible-values-performance//models/circle_arch.glb')
+  const { nodes: volunteer } = useGLTF('/tangible-values-performance//models/pointed_arch.glb')
   
   const matcap = useTexture('./matcaps/7A7A7A_D9D9D9_BCBCBC_B4B4B4.png')
 

@@ -78,7 +78,7 @@ exploration and contemplation`}
         </Text3D>
     </RigidBody>
 
-    <Path position={[0,1,25]} i={1} rotation={[0,0,0]} state = {true}/>
+    <Path position={[0,2,25]} i={1} rotation={[0,0,0]} state = {true}/>
 
     {/* <mesh position={[0, 0, 0]} rotation={[-Math.PI/2, 0, 0]}>
         <planeGeometry args={[10, 10]} />

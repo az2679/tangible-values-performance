@@ -9,7 +9,7 @@ import { animated, useSpring } from "@react-spring/three";
 import { CylinderCollider, RigidBody } from "@react-three/rapier";
 
 export default function DragObj({ name, startPosition, state, plane, lift, num }) {
-  const { nodes } = useGLTF('/tangible-values/models/coin.glb')
+  const { nodes } = useGLTF('/tangible-values-performance/models/coin.glb')
   const [position, setPosition] = useState(startPosition);
 
   const [spring, api] = useSpring(() => ({

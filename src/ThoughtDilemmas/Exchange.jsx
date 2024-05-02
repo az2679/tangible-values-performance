@@ -10,8 +10,8 @@ import Wall from '../Interaction/Wall';
 import Path from '../Components/Path';
 
 export default function Exchange({position, sendSubmit}) {
-  const { nodes: appleNodes } = useGLTF('/tangible-values//models/apple.glb')
-  const { nodes: orangeNodes } = useGLTF('/tangible-values//models/orange.glb')
+  const { nodes: appleNodes } = useGLTF('/tangible-values-performance//models/apple.glb')
+  const { nodes: orangeNodes } = useGLTF('/tangible-values-performance//models/orange.glb')
 
   const[deceive, setDeceive] = useState(false)
   const[exchange, setExchange] = useState(false)

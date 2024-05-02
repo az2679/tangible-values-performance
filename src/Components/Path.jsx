@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { DoubleSide } from 'three';
 
 import gsap from 'gsap';
 
@@ -20,17 +21,17 @@ export default function Path({position, rotation, i, state}) {
     <group ref={pathRef} rotation={rotation} visible={state}>
     <mesh position={[position[0]+(5 *i), position[1],position[2]-30]} rotation={[-Math.PI/2, 0, 0]}>
         <planeGeometry args={[10, 10]} />
-        <meshBasicMaterial color={"#c9ada7"} />
+        <meshBasicMaterial color={"#c9ada7"} side={DoubleSide}/>
       </mesh> 
 
       <mesh position={[position[0]-(5 *i), position[1], position[2]]} rotation={[-Math.PI/2, 0, 0]}>
         <planeGeometry args={[10, 10]} />
-        <meshBasicMaterial color={"#c9ada7"} />
+        <meshBasicMaterial color={"#c9ada7"} side={DoubleSide} />
       </mesh>
 
       <mesh position={[position[0]+(5 *i), position[1], position[2]+30]} rotation={[-Math.PI/2, 0, 0]}>
         <planeGeometry args={[10, 10]} />
-        <meshBasicMaterial color={"#c9ada7"} />
+        <meshBasicMaterial color={"#c9ada7"} side={DoubleSide}/>
       </mesh>
 
 
