@@ -10,7 +10,7 @@ export default function Path({position, rotation, i, state}) {
       gsap.fromTo(
         pathRef.current.position,
         { y: position[1] },
-        { y: -position[1], duration: 1 }
+        { y: -position[1]+1, duration: 1 }
       );
     }
   }, [state, pathRef]);
